@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --text-color: rgb(131, 131, 131);
+  --padding-item: 10px;
+  --default-font: "Josefin Sans", sans-serif;
+  --default-box-color: rgb(243, 243, 243);
+}
+
+.box-item {
+  width: 80%;
+  margin-bottom: 30px;
+  background-color: var(--default-box-color);
+  border-radius: 10px;
+  font-family: var(--default-font);
+}
+
+.box-item__name {
+  padding: var(--padding-item);
+  font-size: 20pt;
+  color: var(--text-color);
+  font-style: italic;
+}
+
+.box-item__image {
+  width: 200px;
+  border-radius: 100%;
+  border: var(--padding-item) solid rgb(67, 67, 67);
+  transition: 0.25s;
+}
+
+.box-item__image:hover {
+  filter: grayscale(100%);
+  transition: 0.25s;
+}
+
+.box-item__category {
+  padding: var(--padding-item);
+  color: var(--text-color);
+}
+
+.box-item__price {
+  padding: var(--padding-item);
+  color: var(--text-color);
+}
+
+.box-item__button {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(255, 0, 0);
+  width: 30vw;
+  height: 6vh;
+  font-size: 10pt;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+  .box-item {
+    width: 80%;
+  }
+
+  .box-item__image {
+    width: 100px;
+  }
+
+  .box-item__button {
+    width: 15vw;
+  }
+}

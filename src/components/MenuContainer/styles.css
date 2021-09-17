@@ -1,0 +1,20 @@
+.list-products__item {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .list-products {
+    display: flex;
+    flex-flow: column wrap;
+    height: 140vh;
+    width: 80vw;
+    align-items: center;
+  }
+
+  .list-products__item {
+    flex-flow: column wrap;
+    width: 30%;
+    justify-content: f;
+  }
+}
